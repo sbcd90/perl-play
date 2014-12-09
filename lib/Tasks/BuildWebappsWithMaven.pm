@@ -5,7 +5,7 @@ use warnings;
 use strict;
 
 use Exporter qw(import);
-our @EXPORT = qw(execute);
+our @EXPORT = qw(execute setTomcatDirectory setMavenDirectory setMavenArtifactsDirectory setLocationsOfLocalDependencies setWebAppLoc setMavenSettingsFileLocation);
 
 use File::Path;
 use XML::Simple;
@@ -19,6 +19,30 @@ my $mavenArtifactsDir = "C:/Users/i076326/.m2";
 my @localDevVersions = ("C:/Users/i076326/git/sap.ui.m2m.extor.reuse");
 my $webAppLoc = "C:/Users/i076326/git/ui.m2m.extor";
 my $settingsFile = "settings-ui5.xml";
+
+sub setTomcatDirectory{
+    $tomcatDir = $_[0];
+}
+
+sub setMavenDirectory{
+    $mavenDir = $_[0];
+}
+
+sub setMavenArtifactsDirectory{
+    $mavenArtifactsDir = $_[0];
+}
+
+sub setLocationsOfLocalDependencies{
+    @localDevVersions = @_;
+}
+
+sub setWebAppLoc{
+    $webAppLoc = $_[0]; 
+}
+
+sub setMavenSettingsFileLocation{
+    $settingsFile = $_[0];
+}
 
 sub execute{
     _stopTomcat();
