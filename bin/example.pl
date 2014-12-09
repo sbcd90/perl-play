@@ -10,4 +10,4 @@ use Tasks::BuildWebappsWithMaven;
 
 my @inputDependencyList = ("C:/Users/i076326/Documents/Temporary/sap.ui.m2m.extor.reuse");
 setLocationsOfLocalDependencies(@inputDependencyList);
-execute();
+execute(); 
