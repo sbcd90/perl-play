@@ -1,0 +1,10 @@
+_build/
+blib/
+Build
+Build.PL
+Build.bat
+Changes
+MANIFEST
+Makefile.PL
+MavenBuilds-Tasks-BuildWebappsWithMaven-0.01.tar.gz
+ignore.txt
