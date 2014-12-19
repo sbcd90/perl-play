@@ -1,0 +1,6 @@
+do{ my $x = {
+       'MavenBuilds-Tasks-BuildWebappsWithMaven-0.01' => 1,
+       'MavenBuilds-Tasks-BuildWebappsWithMaven-*' => 1,
+       'blib' => 1
+     };
+$x; }
