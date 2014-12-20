@@ -1,7 +1,6 @@
 _build/
 blib/
 Build
-Build.PL
 Build.bat
 Changes
 MANIFEST
